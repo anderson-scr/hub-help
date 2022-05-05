@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Press+Start+2P&display=swap');
+
+*, *::before, *::after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 100vw;
+	height: 100vh;
+	
+	background-color: #064A80;
+	font-family: 'Montserrat', sans-serif;
+
+	display: flex;	
+	flex-direction: column;
+}
+
+header
+{
+	
+	height: 25%;
+	/* border: 1px solid #fff; */
+	display: inherit;
+	justify-content: center;
+
+	color: #fff;
+}
+
+.logo
+{
+	display: inherit;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.logo h1
+{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.8rem;
+}
+
+.grid-covid
+{
+	position: absolute;
+	width: 10%;
+	border: 1px solid red;
+}
+
+header .grid-covid
+{
+	right: 0;
+}
+
+main
+{
+	width: 25%;
+	height: 50%;
+	border: 2px solid #fff;
+	border-radius: 5%;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	
+	background-color: #fff;
+}
+
+.opcoes-login
+{
+	height: 3rem;
+	border-radius: 1.5rem 1.5rem 0 0;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #064A80;
+	
+}
+
+.opcoes-login .botao
+{
+	width: 50%;
+	height: 3rem;
+	border: none;
+	cursor: pointer;
+	
+	font-size: 1.125rem;
+	font-weight: 500;
+	
+	color:white;
+	background-color: #064A80;
+	
+}
+
+.opcoes-login .botao:hover
+{
+	color:#064A80;
+	background-color: white;
+}
+
+.opcoes-login #login
+{
+	border-radius: 1.18em 1.18em 0 0;
+}
+
+.opcoes-login #criar-conta
+{
+	border-radius: 1.18em 1.18em 0 0;
+}
+
+
+main form
+{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+form input
+{
+	width: 80%;
+	height: 3.2em;
+	
+	border: 1px solid #064A80;
+	border-radius: 1.6em;
+	padding-left: 1em;
+	outline: none;
+}
+
+form input:focus
+{
+	border: 2px solid #064A80;
+}
+
+#submit-login
+{
+	font-size: 1rem;
+	font-weight: 800;
+	color: #fff;
+	background-color: hsl(207, 91%, 26%);
+	
+	cursor: pointer;
+}
+
+#submit-login:hover
+{
+	background-color: hsl(207, 81%, 34%);
+}
+
+#esqueci-senha
+{
+	border: none;
+	
+	color: #064A80;
+	background-color: #fff;
+	
+	cursor: pointer;
+}
+
+#esqueci-senha:hover
+{
+	text-decoration: underline;
+}
+
+main img
+{
+	align-self: flex-end;
+}
+
+footer
+{
+	height: 25%;
+	/* border: 1px solid #fff; */
+	
+	display: inherit;
+	justify-content: flex-start;
+}
+
+footer .grid-covid
+{
+	left: 0;
+}
