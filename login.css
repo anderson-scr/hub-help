@@ -21,7 +21,7 @@ body
 
 header
 {
-	height: 26.4%;
+	height: 20%;
 	/* border: 1px solid #fff; */
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
@@ -43,11 +43,12 @@ header
 {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 2.8rem;
+	white-space: nowrap;
 }
 
 .grid-covid
 {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	display: grid;
 	aspect-ratio: 0.75/1;
 	grid-template-columns: repeat(3, 1fr);
@@ -63,7 +64,7 @@ main
 {
 	margin: auto 0; 
 	width: 22.5%;
-	height: 45%;
+	min-height: 45%;
 	border: 2px solid #fff;
 	border-radius: 5%;
 	align-self: center;
@@ -98,7 +99,8 @@ main
 	
 }
 
-.opcoes-login .botao:hover
+/* https://css-tricks.com/a-complete-guide-to-data-attributes/ */
+[data-op-atual]
 {
 	color:#064A80;
 	background-color: white;
@@ -177,7 +179,7 @@ main img
 
 footer
 {
-	height: 26.4%;
+	height: 20%;
 	/* border: 1px solid #fff; */
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
