@@ -119,3 +119,16 @@
 
 // SITUAÇÃO DESEJADA: o modal deve informar que a compra foi realizada com sucesso e o usuário é redirecionado para a página principal
 
+
+
+trocaAba()
+{
+	atual = document.querySelector(["data-op-atual"]);
+	prox = atual.nextElementSibling;
+	
+	atual.removeAttribute("data-op-atual");
+	prox.setAttribute("data-op-atual");
+
+	atual.parentElement.load("criar_conta.html");
+
+}

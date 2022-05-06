@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="login.css">
+	
+	<script src="login.js" defer></script>
+
 	<title>Login</title>
 </head>
 <body>
@@ -33,8 +36,8 @@
 	</header>
 	<main>
 		<div class="opcoes-login">
-			<button class="botao" id="login" data-op-atual>LOGIN</button>
-			<button class="botao" id="criar-conta">CRIAR CONTA</button>
+			<button class="botao" id="login" data-op-atual onclick="trocaAba()">LOGIN</button>
+			<button class="botao" id="criar-conta" onclick="trocaAba()">CRIAR CONTA</button>
 		</div>
 
 		<form action="#">

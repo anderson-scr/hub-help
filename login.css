@@ -84,7 +84,7 @@ main
 	
 }
 
-.opcoes-login .botao
+.opcoes-login > .botao
 {
 	width: 50%;
 	height: 3rem;
@@ -93,14 +93,12 @@ main
 	
 	font-size: 1.125rem;
 	font-weight: 500;
-	
 	color:white;
 	background-color: #064A80;
-	
 }
 
 /* https://css-tricks.com/a-complete-guide-to-data-attributes/ */
-[data-op-atual]
+.opcoes-login > [data-op-atual]
 {
 	color:#064A80;
 	background-color: white;
