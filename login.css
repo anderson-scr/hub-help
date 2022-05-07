@@ -31,6 +31,7 @@ header
 
 .logo
 {
+	align-self: end;
 	grid-area: 1/5/2/7;
 	display: flex;
 	flex-direction: column;
@@ -50,6 +51,7 @@ header
 {
 	/* border: 1px solid red; */
 	display: grid;
+	height: 100%;
 	aspect-ratio: 0.75/1;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, 1fr);
@@ -57,8 +59,8 @@ header
 header > .grid-covid
 {
 	grid-area: 1/10/2/11;
-	/* justify-self: end; */
-	/* align-self: start; */
+	justify-self: end;
+	align-self: start;
 }
 main
 {
@@ -129,7 +131,7 @@ form input
 	width: 80%;
 	height: 3.2em;
 	
-	border: 1px solid #064A80;
+	border: 1px solid #c4c4c4;
 	border-radius: 1.6em;
 	padding-left: 1em;
 	outline: none;
@@ -137,13 +139,13 @@ form input
 
 form input:focus
 {
-	border: 2px solid #064A80;
+	border: 1px solid #064A80;
 }
 
 #submit-login
 {
 	font-size: 1rem;
-	font-weight: 800;
+	font-weight: 700;
 	color: #fff;
 	background-color: hsl(207, 91%, 26%);
 	
@@ -170,9 +172,12 @@ form input:focus
 	text-decoration: underline;
 }
 
-main img
+main > img
 {
-	align-self: flex-end;
+	height: 25%;
+	margin-top: auto;
+	margin-left: auto;
+	transform: scale(0.6);
 }
 
 footer
@@ -187,8 +192,8 @@ footer
 footer > .grid-covid
 {
 	grid-area: 1/1/2/2;
-	/* justify-self: start; */
-	/* align-self: end; */
+	justify-self: start;
+	align-self: end;
 }
 
 .cor

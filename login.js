@@ -121,14 +121,32 @@
 
 
 
-trocaAba()
+function trocaAba()
 {
-	atual = document.querySelector(["data-op-atual"]);
-	prox = atual.nextElementSibling;
+	atual = document.querySelector("[data-op-atual]");
 	
-	atual.removeAttribute("data-op-atual");
-	prox.setAttribute("data-op-atual");
-
-	atual.parentElement.load("criar_conta.html");
-
+	prox = atual.nextElementSibling;
+	if(prox == null)
+		prox = atual.previousElementSibling;
+	
+	if(prox.id === 'login')
+	{
+		fetch("login.html")
+		.then(response => {
+			return response.text()
+		})
+		.then(data => {
+			atual.parentElement.parentElement.innerHTML = data;
+		});
+	}
+	else if(prox.id === 'criar-conta')
+	{
+		fetch("criar_conta.html")
+		.then(response => {
+			return response.text()
+		})
+		.then(data => {
+			atual.parentElement.parentElement.innerHTML = data;
+		});
+	}
 }

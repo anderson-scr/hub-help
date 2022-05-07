@@ -1,16 +1,16 @@
 <div class="opcoes-login">
-	<button>LOGIN</button>
-	<button>CRIAR CONTA</button>
+	<button class="botao" id="login" onclick="trocaAba()">LOGIN</button>
+	<button class="botao" id="criar-conta" data-op-atual onclick="trocaAba()">CRIAR CONTA</button>
 </div>
 
 <form action="#">
-	<input type="text" name="matricula" id="">
-	<input type="text" name="email" id="">
-	<input type="text" name="senha" id="">
-	<input type="text" name="confirma_senha" id="">
+	<input type="text" name="matricula" id="" placeholder="NÚMERO MATRÍCULA">
+	<input type="text" name="email" id="" placeholder="E-MAIL">
+	<input type="text" name="senha" id="" placeholder="SENHA">
+	<input type="text" name="confirma_senha" id="" placeholder="CONFIRME SUA SENHA">
 
 
-	<input type="submit" value="CRIAR CONTA">
+	<input type="submit" value="CRIAR CONTA" id="submit-login">
 </form>
 
-<img src="#" alt="Senac Hub Academy logo">
+<img src="img/senac_hub.png" alt="Senac Hub Academy logo">
