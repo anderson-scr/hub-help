@@ -124,6 +124,7 @@
 function trocaAba()
 {
 	atual = document.querySelector("[data-op-atual]");
+	console.log(atual.parentElement.parentElement)
 	
 	prox = atual.nextElementSibling;
 	if(prox == null)
@@ -136,6 +137,9 @@ function trocaAba()
 			return response.text()
 		})
 		.then(data => {
+			console.log(atual.parentElement.parentElement)
+			atual.parentElement.parentElement.style.height = "45%";
+			atual.parentElement.parentElement.style.borderRadius = "5%";
 			atual.parentElement.parentElement.innerHTML = data;
 		});
 	}
@@ -146,6 +150,9 @@ function trocaAba()
 			return response.text()
 		})
 		.then(data => {
+			console.log(atual.parentElement.parentElement)
+			atual.parentElement.parentElement.style.height = "55%";
+			atual.parentElement.parentElement.style.borderRadius = "4.8%";
 			atual.parentElement.parentElement.innerHTML = data;
 		});
 	}

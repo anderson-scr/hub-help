@@ -31,7 +31,7 @@ header
 
 .logo
 {
-	align-self: end;
+	padding-top: 10%;
 	grid-area: 1/5/2/7;
 	display: flex;
 	flex-direction: column;
@@ -119,6 +119,7 @@ main
 
 main form
 {
+	margin-top: 10%;
 	height: 80%;
 	display: flex;
 	flex-direction: column;
@@ -129,10 +130,10 @@ main form
 form input
 {
 	width: 80%;
-	height: 3.2em;
+	height: 3em;
 	
 	border: 1px solid #c4c4c4;
-	border-radius: 1.6em;
+	border-radius: 1.5em;
 	padding-left: 1em;
 	outline: none;
 }
@@ -143,8 +144,11 @@ form input:focus
 }
 
 #submit-login
-{
-	font-size: 1rem;
+{	
+	width: 15em;
+	padding-left: 0;
+	border-radius: 0.8em;
+	/* 	font-size: 1rem; */
 	font-weight: 700;
 	color: #fff;
 	background-color: hsl(207, 91%, 26%);
