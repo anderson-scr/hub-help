@@ -172,12 +172,16 @@ form input:focus
 	text-decoration: underline;
 }
 
-main > img
+.img-container 
 {
-	height: 25%;
-	margin-top: auto;
-	margin-left: auto;
-	transform: scale(0.6);
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	height: 26%;
+}
+.img-container > img
+{
+	transform: scale(0.75);
 }
 
 footer
