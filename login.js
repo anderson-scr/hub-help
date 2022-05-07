@@ -157,3 +157,27 @@ function trocaAba()
 		});
 	}
 }
+
+function esqueciSenha()
+{
+	main = document.querySelector("main");
+	fetch("esqueci_senha.html")
+	.then(response => {
+		return response.text()
+	})
+	.then(data => {
+		main.innerHTML = data;
+	});
+}
+
+function enviaSenha()
+{
+	main = document.querySelector("main");
+	fetch("login.html")
+	.then(response => {
+		return response.text()
+	})
+	.then(data => {
+		main.innerHTML = data;
+	});
+}

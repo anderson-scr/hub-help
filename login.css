@@ -116,10 +116,32 @@ main
 	border-radius: 1.18em 1.18em 0 0;
 }
 
-
-main form
+main > h2
 {
-	margin-top: 10%;
+	font-size: 1.325rem;
+	font-weight: 600;
+	margin-top: 7.5%;
+	color:#064A80;
+	text-align: center;
+}
+
+main > p
+{
+	margin: 7.5% auto 0 auto;
+	color: #474242;
+	max-width: 75%;
+	text-align: center;
+	word-wrap: normal;
+	/* word-break: ; */
+}
+
+main > form.login-padrao
+{
+	margin-top: 5%;
+	justify-content: space-around;
+}
+main > form
+{
 	height: 80%;
 	display: flex;
 	flex-direction: column;
@@ -127,7 +149,7 @@ main form
 	justify-content: space-evenly;
 }
 
-form input
+form > input
 {
 	width: 80%;
 	height: 3em;
@@ -143,7 +165,7 @@ form input:focus
 	border: 1px solid #064A80;
 }
 
-#submit-login
+.submit-button
 {	
 	width: 15em;
 	padding-left: 0;
