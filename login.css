@@ -227,23 +227,23 @@ form input:focus
 
 dialog
 {
+
+	/* display: flex; */
 	margin: auto;
-	display: flex;
-	flex-direction: column;
+	gap: 1em;
 	padding: 3em;
-	border: hidden;
-	border-radius: 5%;
+	border: 0;
+	border-radius: 1em;
 }
 
 dialog::backdrop
 {
-	opacity: 0.2;
+	opacity: 0.75;
 }
 
 dialog > img
 {
 	width: 20%;
-	justify-self: center;
 }
 
 footer
