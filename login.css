@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Press+Start+2P&display=swap');
 
 *, *::before, *::after
 {
@@ -120,7 +120,7 @@ main > h2
 {
 	font-size: 1.325rem;
 	font-weight: 600;
-	margin-top: 7.5%;
+	margin-top: 12.5%;
 	color:#064A80;
 	text-align: center;
 }
@@ -128,18 +128,14 @@ main > h2
 main > p
 {
 	margin: 7.5% auto 0 auto;
-	color: #474242;
 	max-width: 75%;
+	color: #474242;
+	font-weight: 400;
 	text-align: center;
 	word-wrap: normal;
 	/* word-break: ; */
 }
 
-main > form.login-padrao
-{
-	margin-top: 5%;
-	justify-content: space-around;
-}
 main > form
 {
 	height: 80%;
@@ -147,6 +143,23 @@ main > form
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+main > form.form-login
+{
+	margin-top: auto;
+	height:fit-content;
+}
+main > form.form-grande
+{
+	margin-top: 5%;
+	justify-content: space-around;
+}
+
+main > form.form-pequeno
+{
+	justify-content: center;
+	gap: 1.5em;
 }
 
 form > input
@@ -185,6 +198,8 @@ form input:focus
 
 #esqueci-senha
 {
+	margin-top: 0.875em;
+	margin-bottom: auto;
 	border: none;
 	
 	color: #064A80;

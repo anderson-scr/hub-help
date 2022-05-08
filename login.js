@@ -181,3 +181,15 @@ function enviaSenha()
 		main.innerHTML = data;
 	});
 }
+
+function alterarSenha()
+{
+	main = document.querySelector("main")
+	fetch("alterar_senha.html")
+	.then(response => {
+		return response.text()
+	})
+	.then(data => {
+		main.innerHTML = data;
+	});
+}
