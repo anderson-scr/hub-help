@@ -231,6 +231,13 @@ dialog
 	display: flex;
 	flex-direction: column;
 	padding: 3em;
+	border: hidden;
+	border-radius: 5%;
+}
+
+dialog::backdrop
+{
+	opacity: 0.2;
 }
 
 dialog > img
