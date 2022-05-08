@@ -119,6 +119,25 @@
 
 // SITUAÇÃO DESEJADA: o modal deve informar que a compra foi realizada com sucesso e o usuário é redirecionado para a página principal
 
+body = document.querySelector("body")
+
+function setaModal()
+{
+	modal = document.querySelector("[data-modal]")
+	openBtn = document.querySelector("#submit-criar-conta")
+	console.log(document)
+	closeBtn = document.querySelector("[data-close-modal]")
+
+	openBtn.addEventListener('click', () => {
+		modal.showModal();
+		body.style.overflow = 'hidden';
+	})
+
+	closeBtn.addEventListener('click', () => {
+		modal.close();
+		body.style.overflow = '';
+	})
+}
 
 
 function trocaAba()
@@ -154,7 +173,9 @@ function trocaAba()
 			atual.parentElement.parentElement.style.height = "55%";
 			atual.parentElement.parentElement.style.borderRadius = "4.8%";
 			atual.parentElement.parentElement.innerHTML = data;
+			setaModal();
 		});
+
 	}
 }
 

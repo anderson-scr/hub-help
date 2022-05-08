@@ -225,6 +225,20 @@ form input:focus
 	transform: scale(0.75);
 }
 
+dialog
+{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 3em;
+}
+
+dialog > img
+{
+	width: 20%;
+	justify-self: center;
+}
+
 footer
 {
 	height: 20%;
