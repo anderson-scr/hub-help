@@ -1,23 +1,16 @@
-// body = document.querySelector("body")
+function openModal()
+{
+	btn = document.querySelector(".modal-bg")
+	btn.style.visibility = 'visible';
+	btn.style.opacity = '1';
+}
 
-// function setaModal()
-// {
-// 	modal = document.querySelector("[data-modal]")
-// 	openBtn = document.querySelector("#submit-criar-conta")
-// 	console.log(document)
-// 	closeBtn = document.querySelector("[data-close-modal]")
-
-// 	openBtn.addEventListener('click', () => {
-// 		modal.showModal();
-// 		body.style.overflow = 'hidden';
-// 	})
-
-// 	closeBtn.addEventListener('click', () => {
-// 		modal.close();
-// 		body.style.overflow = '';
-// 	})
-// }
-
+function closeModal()
+{
+	btn = document.querySelector(".modal-bg")
+	btn.style.visibility = 'hidden';
+	btn.style.opacity = '0';
+}
 
 function trocaAba()
 {

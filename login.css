@@ -225,25 +225,54 @@ form input:focus
 	transform: scale(0.75);
 }
 
-dialog
+.modal-bg
 {
-
-	/* display: flex; */
-	margin: auto;
-	gap: 1em;
-	padding: 3em;
-	border: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s opacity 0.5s;
+}
+.modal
+{
+	display: flex;
+	flex-direction: column;
+	padding: 1.5em 2em;
+	background-color: #fff;
 	border-radius: 1em;
+	align-items: center;
+	color: #333;
+	border: solid 1px #efefef;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-dialog::backdrop
-{
-	opacity: 0.75;
-}
-
-dialog > img
+.modal > img
 {
 	width: 20%;
+}
+
+.modal> h3
+{
+	margin: 0.325em 0 1.675em 0;
+	font-weight: 400;
+}
+
+.modal > button
+{
+	background-color: #064A80;
+	color: #fff;
+	border: none;
+	border-radius: 0.25em;
+	padding: 0.5em 2em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
 }
 
 footer
