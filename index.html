@@ -44,7 +44,7 @@
 			<input type="text" name="matricula" id="matricula" placeholder="NÚMERO DA MATRÍCULA" maxlength="8">
 			<input type="password" name="senha" id="senha" placeholder="SENHA" maxlength="16">
 
-			<input type="submit" class="submit-button" value="LOGIN" id="login">
+			<input type="submit" class="submit-button" value="LOGIN" id="login" onclick="openModal()">
 		</form>
 		<button id="esqueci-senha" onclick="esqueciSenha()">Esqueci minha senha</button>
 
@@ -52,12 +52,14 @@
 			<img src="img/senac_hub.png" alt="Senac Hub Academy logo">
 		</div>
 	</main>
-	<!-- <dialog data-modal>
-		<img src="img/check_circle_black_48dp.svg" alt="simbolo de sucesso">
-		<h3>Conta criada com sucesso!</h3>
-		<button data-close-modal>OK</button>
-	</dialog> -->
-	<footer>
+	<div class="modal-bg">
+		<div class="modal">
+			<img src="img/check_circle_black_48dp.svg" alt="simbolo de sucesso">
+			<h3>Conta criada com sucesso!</h3>
+			<button type="button" onclick="closeModal()">OK</button>
+		</div>
+	</div>
+		<footer>
 		<div class="grid-covid">
 			<div class="covid cor"></div>
 			<div class="covid"></div>
