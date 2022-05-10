@@ -39,6 +39,7 @@ header
 	justify-content: center;
 	align-items: center;
 }
+
 .logo > img
 {
 	transform: scale(0.8);
@@ -61,12 +62,14 @@ header
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 }
+
 header > .grid-covid
 {
 	grid-area: 1/10/2/11;
 	justify-self: end;
 	align-self: start;
 }
+
 main
 {
 	margin: auto 0; 
@@ -225,6 +228,7 @@ form input:focus
 	align-items: end;
 	height: 26%;
 }
+
 .img-container > img
 {
 	transform: scale(0.75);
@@ -245,6 +249,7 @@ form input:focus
 	opacity: 0;
 	transition: visibility 0s opacity 0.5s;
 }
+
 .modal
 {
 	width: 22em;
