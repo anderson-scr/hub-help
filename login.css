@@ -258,10 +258,18 @@ form input:focus
 	width: 20%;
 }
 
-.modal> h3
+.modal > h3
 {
 	margin: 0.325em 0 1.675em 0;
 	font-weight: 400;
+	word-wrap: normal;
+}
+
+.modal > p
+{
+	margin-top: -0.8375em;
+	margin-bottom: 1.675em;
+	word-wrap: normal;
 }
 
 .modal > button

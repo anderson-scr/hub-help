@@ -1,5 +1,30 @@
-function openModal()
+function openModal(el, ev)
 {
+	img = document.querySelector('#img-modal');
+	titulo = document.querySelector('#titulo-modal');
+	texto = document.querySelector('#texto-modal');
+
+	if(el.id === 'login')
+	{
+		img.src = "img/check_circle_black_48dp.svg";
+		img.alt = "simbolo de sucesso"
+		titulo.innerHTML = "Conta criada com sucesso!";		
+	}
+	else if(el.id === 'enviar-email')
+	{
+		img.src = "img/check_circle_black_48dp.svg";
+		img.alt = "simbolo de sucesso"
+		titulo.innerHTML = "Senha enviada com sucesso!";
+		console.log(`Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`);
+		texto.innerHTML = `Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`;
+	}
+	else if(el.id === 'alterar-senha')
+	{
+		img.src = "img/check_circle_black_48dp.svg";
+		img.alt = "simbolo de sucesso"
+		titulo.innerHTML = "A alteração de senha foi realizada com sucesso!";
+	}
+
 	btn = document.querySelector(".modal-bg")
 	btn.style.visibility = 'visible';
 	btn.style.opacity = '1';
@@ -63,8 +88,9 @@ function esqueciSenha()
 	});
 }
 
-function enviaSenha()
+function enviaSenha(e)
 {
+	openModal(e);
 	main = document.querySelector("main");
 	fetch("login.html")
 	.then(response => {
