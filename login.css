@@ -247,9 +247,10 @@ form input:focus
 }
 .modal
 {
+	width: 22em;
 	display: flex;
 	flex-direction: column;
-	padding: 1.5em 2em;
+	padding: 2em 1.5em;
 	background-color: #fff;
 	border-radius: 1em;
 	align-items: center;
@@ -260,32 +261,50 @@ form input:focus
 
 .modal > img
 {
-	width: 20%;
+	width: 15%;
 }
 
 .modal > h3
 {
-	margin: 0.325em 0 1.675em 0;
+	margin: 0.325em 0 1.25em 0;
 	font-weight: 400;
+	text-align: center;
 	word-wrap: normal;
 }
 
 .modal > p
 {
-	margin-top: -0.8375em;
+	margin-top: -0.625em;
 	margin-bottom: 1.675em;
+	text-align: center;
 	word-wrap: normal;
 }
 
-.modal > button
+.modal > .div-botoes
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.modal > .div-botoes > button
+{
+	width: 6rem;
+	background-color: #fff;
+	color: #064A80;
+	border: solid 2px #064A80;
+	border-radius: 0.25em;
+	padding: 0.5em 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.modal > .div-botoes > .success
 {
 	background-color: #064A80;
 	color: #fff;
-	border: none;
-	border-radius: 0.25em;
-	padding: 0.5em 2em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	cursor: pointer;
+	
 }
 
 footer

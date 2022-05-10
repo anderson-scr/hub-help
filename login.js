@@ -3,7 +3,7 @@ function openModal(el)
 	img = document.querySelector('#img-modal');
 	titulo = document.querySelector('#titulo-modal');
 	texto = document.querySelector('#texto-modal');
-
+	
 	if(el.id === 'login')
 	{
 		img.src = "img/check_circle_blue_48dp.svg";
@@ -15,7 +15,6 @@ function openModal(el)
 		img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
 		titulo.innerHTML = "Senha enviada com sucesso!";
-		console.log(`Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`);
 		texto.innerHTML = `Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`;
 	}
 	else if(el.id === 'alterar-senha')
@@ -28,9 +27,11 @@ function openModal(el)
 	{
 		img.src = "img/help_blue_48dp.svg";
 		img.alt = "simbolo de duvida"
-		titulo.innerHTML = "Você tem certeza que gostaria de sair?";	
+		titulo.innerHTML = "Você tem certeza que gostaria de sair?";
+		
+		document.querySelector(".div-botoes").innerHTML = '<button type="button" onclick="closeModal()">Voltar</button><button type="button" class="success" onclick="closeModal()">Sair</button>'
 	}
-
+	
 	modal = document.querySelector(".modal-bg")
 	modal.style.visibility = 'visible';
 	modal.style.opacity = '1';
