@@ -14,20 +14,20 @@ function openModal(el)
 	{
 		img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
-		titulo.innerHTML = "Senha enviada com sucesso!";
-		texto.innerHTML = `Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`;
+		titulo.innerText = "Senha enviada com sucesso!";
+		texto.innerText = `Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`;
 	}
 	else if(el.id === 'alterar-senha')
 	{
 		img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
-		titulo.innerHTML = "A alteração de senha foi realizada com sucesso!";
+		titulo.innerText = "A alteração de senha foi realizada com sucesso!";
 	}
 	else if(el.id === 'confirmar-saida')
 	{
 		img.src = "img/help_blue_48dp.svg";
 		img.alt = "simbolo de duvida"
-		titulo.innerHTML = "Você tem certeza que gostaria de sair?";
+		titulo.innerText = "Você tem certeza que gostaria de sair?";
 		
 		document.querySelector(".div-botoes").innerHTML = '<button type="button" onclick="closeModal()">Voltar</button><button type="button" class="success" onclick="closeModal()">Sair</button>'
 	}
