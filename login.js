@@ -1,14 +1,20 @@
-function openModal(el)
+const numeroMatricula = document.querySelector("#matricula")
+const senha = document.querySelector("#senha")
+
+function openModal(el, mensagemErro)
 {
 	img = document.querySelector('#img-modal');
 	titulo = document.querySelector('#titulo-modal');
 	texto = document.querySelector('#texto-modal');
-	
-	if(el.id === 'login')
+
+  if(el.id === 'login')
 	{
-		img.src = "img/check_circle_blue_48dp.svg";
+    img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
-		titulo.innerHTML = "Conta criada com sucesso!";		
+		
+    numeroMatricula.value = ''
+    senha.value = ''
+    titulo.innerHTML = mensagemErro;
 	}
 	else if(el.id === 'enviar-email')
 	{
@@ -117,4 +123,24 @@ function alterarSenha()
 	.then(data => {
 		main.innerHTML = data;
 	});
+}
+
+// Rato por aqui
+const resultadoForm = document.querySelector("#form")
+
+
+function verificarEntrada(evt) {
+  evt.preventDefault()
+
+  // Verifica entrada do usuario
+  if(numeroMatricula.value === '' || senha.value === '') {
+    openModal(evt.target, "Preencha todos os campos.")
+
+  } else if (numeroMatricula.value !== '123' || senha.value !== '123') {
+    openModal(evt.target, "Login ou senha invalido.")
+    
+  } else {
+    console.log("entrei")
+    window.location.href = "../Home/home.html"
+  }
 }

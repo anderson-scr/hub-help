@@ -1,0 +1,58 @@
+#cardsSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px 16px 32px;
+  justify-content: space-between;
+  width: 400px;
+  height: 100px;
+  min-width: 180px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card + .card {
+  margin-left: 20px;
+}
+
+.tituloContainner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tituloContainner h3 {
+  font-size: 1.2rem;
+}
+.iconeBackground {
+  background-color: #064A80;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#iconesCard {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.infoContainners {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.infoContainners p {
+  color: #4F4D4D;
+  font-size: 12px;
+
+}
+.infoContainners h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}

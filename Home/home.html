@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import styles -->
+  <link rel="stylesheet" href="./styles/resets.css">
+  <link rel="stylesheet" href="./styles/headerStyle.css">
+  <link rel="stylesheet" href="./styles/cardsStyle.css">
+  
+  <!-- Import google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+
+  <!-- Import google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Inicio</title>
+</head>
+<body>
+  <header id="header">
+    <div class="menuEsquerda">
+      <div class="containnerMenu">
+        <div class="iconeMenu"></div> <!-- Icone do menu -->
+      </div>
+      <div id="menuOpcoes">
+        <i class="material-symbols-outlined relatorios" id="icones"> assignment </i>
+        <i class="material-symbols-outlined logout" id="icones"> logout </i>
+      </div>
+      <h1 id="titulo">Minha Dashboard</h1>
+      <i class="material-symbols-outlined" id="icones"> home </i>
+    </div>
+
+    <div class="menuDireita">
+      <i class="material-symbols-outlined" id="icones"> android_messages </i>
+      <i class="material-symbols-outlined" id="icones"> notifications </i>
+    </div>
+  </header>
+  <main>
+    <section id="cardsSection">
+
+      <div id="ocorrenciasDiarias" class="card">
+        <div class="tituloContainner">
+          <h3>Ocorrencias Diarias</h3>
+          <div class="iconeBackground">
+            <i class="material-symbols-outlined relatorios" id="iconesCard"> assignment </i>
+          </div>
+        </div>
+        <div class="infoContainners">
+          <h2>10</h2>
+          <p>12/05/2022</p>
+        </div>
+      </div>
+
+      <div id="ocorrenciasSemanais" class="card">
+        <div class="tituloContainner">
+          <h3>Ocorrencias Semanais</h3>
+          <div class="iconeBackground">
+            <i class="material-symbols-outlined relatorios" id="iconesCard"> assignment </i>
+          </div>
+        </div>
+        <div class="infoContainners">
+          <h2>50</h2>
+          <p>Ultima Semana</p>
+        </div>
+      </div>
+
+      <div id="ocorrenciasMensais" class="card">
+        <div class="tituloContainner">
+          <h3>Ocorrencias Mensais</h3>
+          <div class="iconeBackground">
+            <i class="material-symbols-outlined relatorios" id="iconesCard"> assignment </i>
+          </div>
+        </div>
+        <div class="infoContainners">
+          <h2>150</h2>
+          <p>Ultimo mes</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="home_script.js"></script>
+</body>
+</html>
