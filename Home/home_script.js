@@ -19,3 +19,17 @@ containnerMenu.addEventListener("click", () => {
   }
   openClose = !openClose
 })
+
+
+function alternaPagina(evt)
+{
+	// evt.preventDefault()
+  if(evt.target.id === 'relatorios')
+	{
+    window.location.href = "../Home/relatorios.html"
+  }
+  else if(evt.target.id === 'home')
+  {
+    window.location.href = "../Home/home.html"
+  }
+}
