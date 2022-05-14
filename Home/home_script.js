@@ -32,4 +32,8 @@ function alternaPagina(evt)
   {
     window.location.href = "../Home/home.html"
   }
+  else if(evt.target.id === 'logout')
+  {
+    window.location.href = "../index.html"
+  }
 }

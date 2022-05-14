@@ -9,12 +9,12 @@ function openModal(el, mensagemErro)
 
 	if(el.id === 'login')
 	{
-    img.src = "img/check_circle_blue_48dp.svg";
+		img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
-		
-    numeroMatricula.value = ''
-    senha.value = ''
-    titulo.innerHTML = mensagemErro;
+			
+		numeroMatricula.value = ''
+		senha.value = ''
+		titulo.innerHTML = mensagemErro;
 	}
 	else if(el.id === 'enviar-email')
 	{
@@ -23,8 +23,9 @@ function openModal(el, mensagemErro)
 		titulo.innerText = "Senha enviada com sucesso!";
 		texto.innerText = `Uma senha temporária foi enviada para o e-mail ${el.previousElementSibling.value}`;
 	}
-	else if(el.id === 'alterar-senha')
+	else if(el.target.id === 'alterar-senha')
 	{
+		el.preventDefault()
 		img.src = "img/check_circle_blue_48dp.svg";
 		img.alt = "simbolo de sucesso"
 		titulo.innerText = "A alteração de senha foi realizada com sucesso!";
@@ -61,7 +62,7 @@ function trocaAba()
 	
 	if(prox.id === 'login')
 	{
-		fetch("login.html")
+		fetch("Login/login.html")
 		.then(response => {
 			return response.text()
 		})
@@ -74,7 +75,7 @@ function trocaAba()
 	}
 	else if(prox.id === 'criar-conta')
 	{
-		fetch("criar_conta.html")
+		fetch("Login/criar_conta.html")
 		.then(response => {
 			return response.text()
 		})
@@ -90,7 +91,7 @@ function trocaAba()
 function esqueciSenha()
 {
 	main = document.querySelector("main");
-	fetch("esqueci_senha.html")
+	fetch("Login/esqueci_senha.html")
 	.then(response => {
 		return response.text()
 	})
@@ -99,11 +100,13 @@ function esqueciSenha()
 	});
 }
 
-function enviaSenha(e)
+function enviaSenha(evt)
 {
-	openModal(e);
+	evt.preventDefault()
+
+	openModal(evt.target);
 	main = document.querySelector("main");
-	fetch("login.html")
+	fetch("Login/login.html")
 	.then(response => {
 		return response.text()
 	})
@@ -115,7 +118,7 @@ function enviaSenha(e)
 function alterarSenha()
 {
 	main = document.querySelector("main")
-	fetch("alterar_senha.html")
+	fetch("Login/alterar_senha.html")
 	.then(response => {
 		return response.text()
 	})
