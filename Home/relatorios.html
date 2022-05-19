@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Import styles -->
+	<link rel="stylesheet" href="./styles/resets.css">
+	<link rel="stylesheet" href="./styles/headerStyle.css">
+	<link rel="stylesheet" href="./styles/cardsStyle.css">
+
+	<!-- Import google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+
+	<!-- Import google icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Inicio</title>
+</head>
+<body>
+	<header id="header">
+		<div class="menuEsquerda">
+			<div class="containnerMenu">
+				<div class="iconeMenu"></div> <!-- Icone do menu -->
+			</div>
+		<div id="menuOpcoes">
+			<i class="material-symbols-outlined relatorios" id="relatorios" onclick="alternaPagina(event)"> assignment </i>
+			<i class="material-symbols-outlined logout"> logout </i>
+		</div>
+			<h1 id="titulo">Minha Dashboard</h1>
+			<i class="material-symbols-outlined" id="home" onclick="alternaPagina(event)"> home </i>
+		</div>
+
+			<div class="menuDireita">
+			<i class="material-symbols-outlined"> android_messages </i>
+			<i class="material-symbols-outlined"> notifications </i>
+		</div>
+	</header>
+	<main>
+		<h1 class="titulo-pagina">RELATÓRIOS</h1>
+		<div class="super-card">
+			<div class="conteudo">
+				<div class="lado-esq">
+					<div class="opcoes">
+						<label for="categoria">Categoria</label>
+						<input type="text" name="categoria">
+					</div>
+					<div class="opcoes">
+						<label for="andar">Andar</label>
+						<input type="text" name="andar">
+					</div>
+					<div class="opcoes">
+						<label for="tempo">Tempo</label>
+						<input type="text" name="tempo">
+					</div>
+				</div>
+				<div class="lado-dir">
+					<div class="opcoes">
+						<label for="situacao">Situação</label>
+						<input type="text" name="situacao">
+					</div>
+					<div class="opcoes">
+						<label for="sala">Sala</label>
+						<input type="text" name="sala">
+					</div>
+					<div class="opcoes">
+						<label for="unidade">Unidade</label>
+						<input type="text" name="unidade">
+					</div>
+				</div>
+			</div>
+			<button>Gerar</button>
+		</div>
+	</main>
+<script src="home_script.js"></script>
+</body>
+</html>

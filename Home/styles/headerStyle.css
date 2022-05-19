@@ -23,9 +23,10 @@
   height: 25px;
   transition: all .3s ease-in-out;
 }
-#icones {
+.material-symbols-outlined {
   color: #064A80;
   font-size: 28px;
+  cursor: pointer;
 }
 
 /* Criando o icone do menu */
