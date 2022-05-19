@@ -9,7 +9,7 @@
   padding: 0 4% 0 4%;
   transition: background-color .6s ease;
 }
-.menuEsquerda {
+#menuEsquerda {
   display: inherit;
   justify-content: center;
   align-items: center;
@@ -29,14 +29,14 @@
 }
 
 /* Criando o icone do menu */
-.iconeMenu {
+#iconeMenu {
   height: 3px;
   width: 23px;
   background-color: black;
   border-radius: 1.5px;
   transition: all .3s ease-in-out;
 }
-.iconeMenu::before, .iconeMenu::after {
+#iconeMenu::before, #iconeMenu::after {
   content: '';
   position: absolute;
   height: 3px;
@@ -45,22 +45,22 @@
   border-radius: 2px;
   transition: all .3s ease-in-out;
 }
-.iconeMenu::before {
+#iconeMenu::before {
   transform: translateY(-8px);
 }
-.iconeMenu::after {
+#iconeMenu::after {
   transform: translateY(8px);
 }
 
 /* Animaca */
-.containnerMenu.open .iconeMenu {
+.containnerMenu.open #iconeMenu {
   transform: translateX(-20px);
   background-color: transparent;
 }
-.containnerMenu.open .iconeMenu::before {
+.containnerMenu.open #iconeMenu::before {
   transform: rotate(45deg) translate(15px, -15px);
 }
-.containnerMenu.open .iconeMenu::after {
+.containnerMenu.open #iconeMenu::after {
   transform: rotate(-45deg) translate(15px, 15px);
 }
 

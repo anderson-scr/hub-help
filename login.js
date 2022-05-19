@@ -126,8 +126,6 @@ function alterarSenha()
 }
 
 // Rato por aqui
-const resultadoForm = document.querySelector("#form")
-
 
 function verificarEntrada(evt) {
   evt.preventDefault()
@@ -137,7 +135,7 @@ function verificarEntrada(evt) {
     openModal(evt.target, "Preencha todos os campos.")
 
   } else if (numeroMatricula.value !== '123' || senha.value !== '123') {
-    openModal(evt.target, "Login ou senha invalido.")
+    openModal(evt.target, "Login ou senha invalidos.")
     
   } else {
     console.log("entrei")

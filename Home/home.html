@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../img/hub-help-logo.svg">
 
   <!-- Import styles -->
   <link rel="stylesheet" href="./styles/resets.css">
   <link rel="stylesheet" href="./styles/headerStyle.css">
   <link rel="stylesheet" href="./styles/cardsStyle.css">
+  <link rel="stylesheet" href="./styles/footerStyle.css">
+  <link rel="stylesheet" href="./styles/tabelaStyle.css">
   
   <!-- Import google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,13 +21,13 @@
   <!-- Import google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <title>Inicio</title>
+  <title>Hub Help - Home</title>
 </head>
 <body>
   <header id="header">
-    <div class="menuEsquerda">
+    <div id="menuEsquerda">
       <div class="containnerMenu">
-        <div class="iconeMenu"></div> <!-- Icone do menu -->
+        <div id="iconeMenu"></div> <!-- Icone do menu -->
       </div>
       <div id="menuOpcoes">
         <i class="material-symbols-outlined relatorios" id="icones"> assignment </i>
@@ -41,7 +44,6 @@
   </header>
   <main>
     <section id="cardsSection">
-
       <div id="ocorrenciasDiarias" class="card">
         <div class="tituloContainner">
           <h3>Ocorrencias Diarias</h3>
@@ -54,7 +56,6 @@
           <p>12/05/2022</p>
         </div>
       </div>
-
       <div id="ocorrenciasSemanais" class="card">
         <div class="tituloContainner">
           <h3>Ocorrencias Semanais</h3>
@@ -67,7 +68,6 @@
           <p>Ultima Semana</p>
         </div>
       </div>
-
       <div id="ocorrenciasMensais" class="card">
         <div class="tituloContainner">
           <h3>Ocorrencias Mensais</h3>
@@ -81,7 +81,61 @@
         </div>
       </div>
     </section>
+
+    <h1 id="tituloTabela">Ultimas Ocorrencias</h1>
+    <section id="tableSection">
+      <div id="filtros">
+        <form id="pesquisaTabela">
+          <input type="text" name="pesquisa" id="inputPesquisaTabela" placeholder="Pesquisar...">
+          <button class="material-symbols-outlined" id="btnPesquisaTabela">search</button>
+        </form>
+        <div id="filtrosContainner">
+          <div class="placeHolderDropdown"></div>
+          <div class="placeHolderDropdown"></div>
+          <div class="placeHolderDropdown"></div>
+          <div class="placeHolderDropdown"></div>
+          <div class="placeHolderDropdown"></div>
+          <div class="placeHolderDropdown"></div>
+        </div>
+      </div>
+      <table id="tabela">
+
+        <col id="Codigo">
+        <col id="Tempo">
+        <col id="Categoria">
+        <col id="Situacao">
+        <col id="Andar">
+        <col id="Sala">
+        <col id="Unidade">
+        <col id="Data">
+        <col id="Solicitante">
+        <col id="Acoes">
+
+        <thead>
+          <th>Codigo</th>
+          <th>Tempo</th>
+          <th>Categoria</th>
+          <th>Situacao</th>
+          <th>Andar</th>
+          <th>Sala</th>
+          <th>Unidade</th>
+          <th>Data</th>
+          <th>Solicitante</th>
+          <th>Acoes</th>
+        </thead>
+
+        <tbody id="dadosTabela">
+        
+        </tbody>
+      </table>
+    </section>
+    <footer id="footerHome">
+      <p id="rodapeFabrica">Fabrica de Software - Turma 56</p>
+      <img src="../img/senac_hub.png" id="logoSenac" alt="Logo Senac Hub Academy">
+    </footer>
   </main>
-  <script src="home_script.js"></script>
+
+  <script src="./Javascript/header_menu.js"></script>
+  <script src="Javascript/table.js" type="module"></script>
 </body>
 </html>
