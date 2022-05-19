@@ -26,7 +26,7 @@
 .material-symbols-outlined {
   color: #064A80;
   font-size: 28px;
-  cursor: pointer;
+  user-select: none;
 }
 
 /* Criando o icone do menu */
@@ -83,15 +83,11 @@
   transition-duration: .5s;
 }
 
-
-
-
-.logout {
+.opcaoMenu {
+  cursor: pointer;
+}
+/* Inverter o lado do icone */
+#logout {
   transform: rotate(180deg);
 }
 
-
-.menuDireita {
-  display: inherit;
-  gap: 25px;
-}

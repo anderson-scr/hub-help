@@ -1,4 +1,4 @@
-#footerHome {
+#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -13,4 +13,5 @@
 }
 #rodapeFabrica {
   color: #a1a1a1;
+  margin: 0;
 }

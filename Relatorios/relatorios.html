@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Import styles -->
-	<link rel="stylesheet" href="./styles/resets.css">
-	<link rel="stylesheet" href="./styles/headerStyle.css">
-	<link rel="stylesheet" href="./styles/cardsStyle.css">
+	<link rel="stylesheet" href="./Styles/resets.css">
+	<link rel="stylesheet" href="./Styles/relatorioStyle.css">
+	<link rel="stylesheet" href="../Components/Header/headerStyle.css">
+  <link rel="stylesheet" href="../Components/Footer/footerStyle.css">
 
 	<!-- Import google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,26 +19,15 @@
 	<!-- Import google icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- scripts -->
+  <script src="fetch_components.js" defer></script>
+  <script src="../Components/Header/header_menu.js" defer></script>
+
 	<title>Inicio</title>
 </head>
 <body>
 	<header id="header">
-		<div class="menuEsquerda">
-			<div class="containnerMenu">
-				<div class="iconeMenu"></div> <!-- Icone do menu -->
-			</div>
-		<div id="menuOpcoes">
-			<i class="material-symbols-outlined relatorios" id="relatorios" onclick="alternaPagina(event)"> assignment </i>
-			<i class="material-symbols-outlined logout"> logout </i>
-		</div>
-			<h1 id="titulo">Minha Dashboard</h1>
-			<i class="material-symbols-outlined" id="home" onclick="alternaPagina(event)"> home </i>
-		</div>
-
-			<div class="menuDireita">
-			<i class="material-symbols-outlined"> android_messages </i>
-			<i class="material-symbols-outlined"> notifications </i>
-		</div>
+		<!-- fetch info -->
 	</header>
 	<main>
 		<h1 class="titulo-pagina">RELATÓRIOS</h1>
@@ -75,6 +65,8 @@
 			<button>Gerar</button>
 		</div>
 	</main>
-<script src="home_script.js"></script>
+  <footer id="footer">
+    <!-- fetch info -->
+  </footer>
 </body>
 </html>

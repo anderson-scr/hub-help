@@ -8,7 +8,7 @@
   border-radius: 5px;
 }
 #tituloTabela {
-  margin: 60px 0 15px 7.9%;
+  margin: 40px 0 15px 7.9%;
   color: #4F4D4D;
   font-weight: 600;
 }
@@ -54,11 +54,17 @@
   display: flex;
   width: calc(100% - 300px);
   justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 8px;
 }
-.placeHolderDropdown {
-  width: 126px;
-  height: 20px;
-  background-color: #1669AC;
+.form-select {
+  height: 30px;
+  width: 160px;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 12px;
 }
 
 /* Tabela */
@@ -66,7 +72,6 @@
   margin: auto;
   width: 98%;
   border-collapse: collapse;
-  text-align: left;
 }
 th {
   background-color: #1669AC;
@@ -87,21 +92,23 @@ td {
   font-weight: 500;
 }
 
-/* Style das colunas */
+/* Alinhar elementos de colunas centralizados. */
+.centralizar {
+  text-align: center;
+  padding: 0; 
+}
+
+/* Style das colunas geral*/
 #Codigo {
   width: 8%;
 }
 #Tempo {
-  width: 8%;
+  width: 6%;
 }
 #Categoria {
   width: 8%;
 }
-.cat {
-  text-align: center;
-  padding: 0;
-  padding-right: 10px;
-}
+
 #Situacao {
   width: 7%;
 }
@@ -122,4 +129,20 @@ td {
 }
 #Acoes {
   width: 8%;
+}
+
+/* Coluna mais detalhes */
+.maisDetalhes {
+  color: #064A80;
+  font-weight: 700;
+  cursor: pointer;
+}
+.maisDetalhes:hover {
+  text-decoration: underline;
+}
+
+/* Arredondar e cor branca na situacao */
+.situacoes {
+  color: #FFFFFF;
+  border-radius: 10px;
 }

@@ -79,7 +79,7 @@ export const exemploDados = [
   {
     codigo: "HI20220001",
     tempo: "4min",
-    categoria: "1",
+    categoria: "5",
     situacao: "4",
     andar: "1 andar",
     sala: "Sala 202",
