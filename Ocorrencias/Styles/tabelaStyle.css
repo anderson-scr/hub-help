@@ -1,0 +1,148 @@
+#tableSection {
+  justify-content: center;
+  width: 88%;
+  height: 72vh;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#tituloTabela {
+  margin: 40px 0 15px 7.9%;
+  color: #4F4D4D;
+  font-weight: 600;
+}
+
+
+/* Filtros */
+#filtros {
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#pesquisaTabela {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 260px;
+  height: 32px;
+  border-radius: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+#inputPesquisaTabela {
+  width: 85%;
+  margin: 0;
+  display: inline-block;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+#btnPesquisaTabela {
+  background-color: #fff;
+  border: none;
+  width: 15%;
+  height: 100%;
+  display: inline-block;
+  color: #1669AC;
+}
+#filtrosContainner {
+  display: flex;
+  width: calc(100% - 300px);
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+.form-select {
+  height: 30px;
+  width: 160px;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+/* Tabela */
+#tabela {
+  margin: auto;
+  width: 98%;
+  border-collapse: collapse;
+}
+th {
+  background-color: #1669AC;
+  font-weight: 600;
+  font-size: 16px;
+  height: 33px;
+  letter-spacing: 1px;
+  color: #fff;
+  padding-left: 20px;
+}
+td {
+  padding-left: 22px;
+  height: 40px;
+  font-size: 14px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);;
+  height: 50px;
+  font-weight: 500;
+}
+
+/* Alinhar elementos de colunas centralizados. */
+.centralizar {
+  text-align: center;
+  padding: 0; 
+}
+
+/* Style das colunas geral*/
+#Codigo {
+  width: 8%;
+}
+#Tempo {
+  width: 6%;
+}
+#Categoria {
+  width: 8%;
+}
+
+#Situacao {
+  width: 7%;
+}
+#Andar {
+  width: 6%;
+}
+#Sala {
+  width: 6%;
+}
+#Unidade {
+  width: 28%;  
+}
+#Data {
+  width: 8%;
+}
+#Solicitante {
+  width: 13%;
+}
+#Acoes {
+  width: 8%;
+}
+
+/* Coluna mais detalhes */
+.maisDetalhes {
+  color: #064A80;
+  font-weight: 700;
+  cursor: pointer;
+}
+.maisDetalhes:hover {
+  text-decoration: underline;
+}
+
+/* Arredondar e cor branca na situacao */
+.situacoes {
+  color: #FFFFFF;
+  border-radius: 10px;
+}

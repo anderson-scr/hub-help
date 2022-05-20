@@ -5,7 +5,7 @@ headerHtml.then(() => {
   const header = document.querySelector("#header")
   const menuEsquerda = document.querySelector("#menuEsquerda")
   
-  
+  // Animacao do menu do header
   containnerMenu.addEventListener("click", () => {
     openClose? closeMenu() : openMenu()
     openClose = !openClose
@@ -20,7 +20,7 @@ headerHtml.then(() => {
   
   function openMenu() {
     containnerMenu.classList.add("open")
-    menuOpcoes.style.width = "130px"
+    menuOpcoes.style.width = "180px"
     menuOpcoes.style.gap = "20px"
     menuOpcoes.style.opacity = "1"
   }
@@ -32,12 +32,11 @@ headerHtml.then(() => {
     menuOpcoes.style.opacity = "0"
   }
 
-  const botoesNavegacao = document.querySelectorAll(".opcaoMenu")
-  
+  // Funcao para trocar de pagina
+  const botoesNavegacao = document.querySelectorAll(".opcoesMenu")
   for(botao of botoesNavegacao) {
     botao.addEventListener("click", (evt) => {
-      console.log(evt.target.id)
-      
+
       if(evt.target.id === 'relatorios') {
         window.location.href = "../../Relatorios/relatorios.html"
       }
@@ -48,9 +47,8 @@ headerHtml.then(() => {
         window.location.href = "../../index.html"
       }
       else if(evt.target.id === 'ocorrencias') {
-        console.log("fui pra ocorrencias")
+        window.location.href = "../../Ocorrencias/ocorrencias.html"
       }
     })
   }
-  
 })

@@ -25,8 +25,8 @@
 }
 .material-symbols-outlined {
   color: #064A80;
-  font-size: 28px;
   user-select: none;
+  cursor: pointer;
 }
 
 /* Criando o icone do menu */
@@ -83,11 +83,11 @@
   transition-duration: .5s;
 }
 
-.opcaoMenu {
-  cursor: pointer;
-}
 /* Inverter o lado do icone */
 #logout {
   transform: rotate(180deg);
 }
 
+.selected {
+  border-bottom: 2px solid #064A80;
+}
