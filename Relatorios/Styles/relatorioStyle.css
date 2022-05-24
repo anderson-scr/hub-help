@@ -50,16 +50,18 @@ h1.titulo-pagina
   justify-content: space-between;
   align-items: center;
 }
-.opcoes > input
+.opcoes > select
 {
   width: 82%;
   height: 3em;
   border-radius: 1em;
   border: 1px solid #c4c4c4;
+  cursor: pointer;
 }
 
 .opcoes > label
 {
   color: #4F4D4D;
+  font-weight: 600;
   font-size: 1rem;
 }
