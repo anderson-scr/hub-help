@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../img/hub-help-logo.svg">
+	
+	<!-- Import bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 	<!-- Import styles -->
 	<link rel="stylesheet" href="../Components/Resets/resets.css">
 	<link rel="stylesheet" href="./Styles/relatorioStyle.css">
 	<link rel="stylesheet" href="../Components/Header/headerStyle.css">
-  <link rel="stylesheet" href="../Components/Footer/footerStyle.css">
+	<link rel="stylesheet" href="../Components/Footer/footerStyle.css">
 
 	<!-- Import google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +23,12 @@
 	<!-- Import google icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- scripts -->
-  <script src="../Components/Fetch/header_footer.js" defer></script>
-  <script src="../Components/Header/header_menu.js" defer></script>
-  <script src="./Javascript/script.js" defer></script>
+	<!-- scripts -->
+	<script src="../Components/Fetch/header_footer.js" defer></script>
+	<script src="../Components/Header/header_menu.js" defer></script>
+	<script src="./Javascript/script.js" defer></script>
 
-	<title>Inicio</title>
+	<title>Hub Help - Relatórios</title>
 </head>
 <body>
 	<header id="header">
@@ -37,29 +41,59 @@
 				<div class="lado-esq">
 					<div class="opcoes">
 						<label for="categoria">Categoria</label>
-						<input type="text" name="categoria">
+						<select name="categoria">
+							<option selected>Categoria...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 					<div class="opcoes">
 						<label for="andar">Andar</label>
-						<input type="text" name="andar">
+						<select name="andar">
+							<option selected>Andar...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 					<div class="opcoes">
 						<label for="tempo">Tempo</label>
-						<input type="text" name="tempo">
+						<select name="tempo">
+							<option selected>Tempo...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 				</div>
 				<div class="lado-dir">
 					<div class="opcoes">
 						<label for="situacao">Situação</label>
-						<input type="text" name="situacao">
+						<select name="situacao">
+							<option selected>Situação...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 					<div class="opcoes">
 						<label for="sala">Sala</label>
-						<input type="text" name="sala">
+						<select name="sala">
+							<option selected>Sala...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 					<div class="opcoes">
 						<label for="unidade">Unidade</label>
-						<input type="text" name="unidade">
+						<select name="unidade">
+							<option selected>Unidade...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 					</div>
 				</div>
 			</div>
