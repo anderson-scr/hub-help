@@ -16,3 +16,14 @@ fetch("../../Components/Footer/footer.html")
   .then(data => {
     document.querySelector("#footer").innerHTML = data
   })
+
+const barraLateralHTML = new Promise((resolve) => {
+  fetch("../../Components/BarraLateral/barraLateral.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("#barraLateral").innerHTML = data
+    resolve()
+  })
+})

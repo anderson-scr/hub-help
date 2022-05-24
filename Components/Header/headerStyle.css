@@ -6,88 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4% 0 4%;
-  transition: background-color .6s ease;
+  padding: 0 5.5% 0 5.5%;
 }
 #menuEsquerda {
   display: inherit;
   justify-content: center;
   align-items: center;
   gap: 25px;
-}
-.containnerMenu {
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  height: 25px;
-  transition: all .3s ease-in-out;
-}
-.material-symbols-outlined {
-  color: #064A80;
-  user-select: none;
-  cursor: pointer;
-}
-
-/* Criando o icone do menu */
-#iconeMenu {
-  height: 3px;
-  width: 23px;
-  background-color: black;
-  border-radius: 1.5px;
-  transition: all .3s ease-in-out;
-}
-#iconeMenu::before, #iconeMenu::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 23px;
-  background-color: black;
-  border-radius: 2px;
-  transition: all .3s ease-in-out;
-}
-#iconeMenu::before {
-  transform: translateY(-8px);
-}
-#iconeMenu::after {
-  transform: translateY(8px);
-}
-
-/* Animaca */
-.containnerMenu.open #iconeMenu {
-  transform: translateX(-20px);
-  background-color: transparent;
-}
-.containnerMenu.open #iconeMenu::before {
-  transform: rotate(45deg) translate(15px, -15px);
-}
-.containnerMenu.open #iconeMenu::after {
-  transform: rotate(-45deg) translate(15px, 15px);
-}
-
-/* Menu escondido */
-#menuOpcoes {
-  border-radius: 10px;
-  width: 0px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0px;
-  overflow: hidden;
-  opacity: 0;
-  background-color: #FFFEFE;
-
-  transition-property: width gap opacity;
-  transition-delay: .2s;
-  transition-duration: .5s;
-}
-
-/* Inverter o lado do icone */
-#logout {
-  transform: rotate(180deg);
-}
-
-.selected {
-  border-bottom: 2px solid #064A80;
 }

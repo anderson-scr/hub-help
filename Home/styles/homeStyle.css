@@ -1,0 +1,4 @@
+/* Definir tamanho da campo menos a barra lateral */
+#conteudoPrincipal {
+  width: calc(100% - 80px);
+}

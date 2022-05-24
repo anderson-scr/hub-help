@@ -1,11 +1,5 @@
 import {exemploDados} from "../Data/dataExemplo.js";
 
-// Adiciona o marcado de pagina no header depois de carregado.
-headerHtml.then(() => {
-  document.querySelector("#ocorrencias").style.borderBottom = "2px solid #1669AC"
-})
-
-
 class Tabela {
   constructor(infoTabela) {
     this.infoTabela = infoTabela

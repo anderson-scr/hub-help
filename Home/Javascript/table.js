@@ -1,10 +1,5 @@
 import {exemploDados} from "./data/table_data.js";
 
-// Adiciona o marcado de pagina no header depois de carregado.
-headerHtml.then(() => {
-  document.querySelector("#home").style.borderBottom = "2px solid #1669AC"
-})
-
 function carregarDadosTabela(dados) {
   const tabela = document.querySelector("#dadosTabela")
   let dataHTML = ''
