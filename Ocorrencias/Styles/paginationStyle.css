@@ -1,0 +1,12 @@
+#pagination {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+.pagination > li > a {
+  color: #1669AC;
+}
+.pagination > li > .active {
+  background-color: #1669AC;
+  border-color: #1669AC;
+}
