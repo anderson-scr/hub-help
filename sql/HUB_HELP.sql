@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS Sala
 CREATE TABLE IF NOT EXISTS Ocorrencia
 (
     id BIGINT AUTO_INCREMENT NOT NULL,
-    data_hora DATETIME NOT NULL,
+    data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
     situacao ENUM('Em aberto', 'Em andamento', 'Concluído', 'Cancelado'),
     fk_categoria TINYINT NOT NULL,
     fk_sala TINYINT NOT NULL,
