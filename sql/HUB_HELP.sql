@@ -74,7 +74,6 @@ CREATE TABLE Auditoria
 	depois VARCHAR(255) NOT NULL,
 	fk_colaborador INT UNSIGNED NOT NULL,
 
-	
 	CONSTRAINT pk_auditoria PRIMARY KEY (id),
 	CONSTRAINT fk_auditoria_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE
 );
