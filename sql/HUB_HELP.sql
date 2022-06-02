@@ -68,10 +68,12 @@ CREATE TABLE Auditoria
 (
 	id BIGINT UNSIGNED AUTO_INCREMENT NOT NULL,
 	data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    tabela VARCHAR(30) NOT NULL,
-	acao VARCHAR(255) NOT NULL,
-    fk_colaborador INT UNSIGNED NOT NULL,
-	
+	tabela VARCHAR(30) NOT NULL,
+	coluna VARCHAR(30) NOT NULL,
+	antes VARCHAR(255) NOT NULL,
+	depois VARCHAR(255) NOT NULL,
+	fk_colaborador INT UNSIGNED NOT NULL,
+
 	
 	CONSTRAINT pk_auditoria PRIMARY KEY (id),
 	CONSTRAINT fk_auditoria_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE
