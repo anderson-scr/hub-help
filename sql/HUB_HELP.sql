@@ -8,10 +8,10 @@ CREATE TABLE IF NOT EXISTS Colaborador
 	id INT UNSIGNED AUTO_INCREMENT NOT NULL,
 	nome VARCHAR(50) NOT NULL,
 	sobrenome VARCHAR(50) NOT NULL,    
-	login VARCHAR(100) UNIQUE NOT NULL,
+	email VARCHAR(100) UNIQUE NOT NULL,
 	senha VARCHAR(100) NOT NULL,
 	privilegio BOOLEAN DEFAULT 0,
-	ativo BOOLEAN DEFAULT 0,
+	inativo BOOLEAN DEFAULT 0,
 	
 	CONSTRAINT pk_login PRIMARY KEY (id)
 );
@@ -19,8 +19,9 @@ CREATE TABLE IF NOT EXISTS Colaborador
 CREATE TABLE IF NOT EXISTS Categoria
 (
 	id TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
-	nome VARCHAR(30) NOT NULL,
-	
+	nome VARCHAR(30) UNIQUE NOT NULL,
+	inativo BOOLEAN DEFAULT 0,
+
 	CONSTRAINT pk_categoria PRIMARY KEY (id)
 );
 
@@ -29,7 +30,8 @@ CREATE TABLE IF NOT EXISTS Sala
 	id TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
 	nome VARCHAR(50) NOT NULL,
 	andar TINYINT UNSIGNED NOT NULL,
-	unidade VARCHAR(100),    
+	unidade VARCHAR(100),
+	inativo BOOLEAN DEFAULT 0,
 	
 	CONSTRAINT pk_sala PRIMARY KEY (id)
 );
@@ -46,9 +48,9 @@ CREATE TABLE IF NOT EXISTS Ocorrencia
 	descricao VARCHAR(255),
 	
 	CONSTRAINT pk_ocorrencia PRIMARY KEY (id),
-	CONSTRAINT fk_ocorrencia_x_categoria FOREIGN KEY (fk_categoria) REFERENCES Categoria(id) ON UPDATE CASCADE ON DELETE NO ACTION,
-	CONSTRAINT fk_ocorrencia_x_sala FOREIGN KEY (fk_sala) REFERENCES Sala(id) ON UPDATE CASCADE ON DELETE NO ACTION,
-	CONSTRAINT fk_ocorrencia_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE ON DELETE NO ACTION
+	CONSTRAINT fk_ocorrencia_x_categoria FOREIGN KEY (fk_categoria) REFERENCES Categoria(id) ON UPDATE CASCADE,
+	CONSTRAINT fk_ocorrencia_x_sala FOREIGN KEY (fk_sala) REFERENCES Sala(id) ON UPDATE CASCADE,
+	CONSTRAINT fk_ocorrencia_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS Notificacao
@@ -59,7 +61,7 @@ CREATE TABLE IF NOT EXISTS Notificacao
 	mensagem VARCHAR(255) NOT NULL,
 	
 	CONSTRAINT pk_notificacao PRIMARY KEY (id),
-	CONSTRAINT fk_notificacao_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE ON DELETE NO ACTION
+	CONSTRAINT fk_notificacao_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE 
 );
 
 CREATE TABLE IF NOT EXISTS Auditoria
@@ -72,5 +74,5 @@ CREATE TABLE IF NOT EXISTS Auditoria
 	
 	
 	CONSTRAINT pk_auditoria PRIMARY KEY (id),
-	CONSTRAINT fk_auditoria_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+	CONSTRAINT fk_auditoria_x_colaborador FOREIGN KEY (fk_colaborador) REFERENCES Colaborador(id) ON UPDATE CASCADE
 );
