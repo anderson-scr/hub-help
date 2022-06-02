@@ -1,3 +1,5 @@
 https://stackoverflow.com/questions/1318224/mysql-fire-trigger-for-both-insert-and-update
 
 https://www.mysqltutorial.org/create-the-first-trigger-in-mysql.aspx
+
+#43853d
