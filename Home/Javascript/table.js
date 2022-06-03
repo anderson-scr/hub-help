@@ -31,7 +31,7 @@ function carregarDadosTabela(dados) {
                   <td>${dado["data"]}</td>
                   <td>${dado["solicitante"]}</td>
                   <td class="maisDetalhes centralizar">Mais Detalhes</td>
-                 </tr>`
+                </tr>`
   }
   tabela.innerHTML = dataHTML
 }
