@@ -81,6 +81,7 @@ main
 	display: flex;
 	flex-direction: column;
 	
+	overflow-y: hidden;
 	background-color: #fff;
 }
 
@@ -116,12 +117,12 @@ main
 
 .opcoes-login #login
 {
-	border-radius: 1.18em 1.18em 0 0;
+	border-radius: 0 1.18em 0 0;
 }
 
 .opcoes-login #criar-conta
 {
-	border-radius: 1.18em 1.18em 0 0;
+	border-radius: 1.18em 0 0 0;
 }
 
 main > h2
