@@ -40,7 +40,7 @@ CREATE TABLE Ocorrencia
 (
 	id BIGINT UNSIGNED AUTO_INCREMENT NOT NULL,
 	data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	situacao ENUM("Em aberto", "Em andamento", "Concluído", "Cancelado"),
+	situacao ENUM("Em aberto", "Em andamento", "Concluído", "Cancelado") NOT NULL,
 	fk_categoria TINYINT UNSIGNED NOT NULL,
 	fk_sala TINYINT UNSIGNED NOT NULL,
 	fk_colaborador INT UNSIGNED NOT NULL,
